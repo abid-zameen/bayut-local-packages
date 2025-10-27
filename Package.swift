@@ -5,34 +5,23 @@ let package = Package(
     name: "BayutLocalPackages",
     platforms: [.iOS(.v13)],
     products: [
-        // A dummy product to make the package valid
-        .library(name: "BayutLocalPackages", targets: ["BayutLocalPackages"])
-    ],
-    dependencies: [
-        .package(path: "./MarqueeLabel"),
-        .package(path: "./ImageSlideshow"),
-        .package(path: "./Presentr"),
-        .package(path: "./RangeSeekSlider"),
-        .package(path: "./ReadMoreTextView"),
-        .package(path: "./TTTAttributedLabel"),
-        .package(path: "./SlideMenuController"),
-        .package(path: "./DZNWebViewController")
+        .library(name: "MarqueeLabel", targets: ["MarqueeLabel"]),
+        .library(name: "ImageSlideshow", targets: ["ImageSlideshow"]),
+        .library(name: "Presentr", targets: ["Presentr"]),
+        .library(name: "RangeSeekSlider", targets: ["RangeSeekSlider"]),
+        .library(name: "ReadMoreTextView", targets: ["ReadMoreTextView"]),
+        .library(name: "TTTAttributedLabel", targets: ["TTTAttributedLabel"]),
+        .library(name: "SlideMenuControllerSwift", targets: ["SlideMenuControllerSwift"]),
+        .library(name: "DZNWebViewController", targets: ["DZNWebViewController"])
     ],
     targets: [
-        .target(
-            name: "BayutLocalPackages",
-            dependencies: [
-                "MarqueeLabel",
-                "ImageSlideshow",
-                "Presentr",
-                "RangeSeekSlider",
-                "ReadMoreTextView",
-                "TTTAttributedLabel",
-                "SlideMenuControllerSwift",
-                "DZNWebViewController"
-            ],
-            path: "Sources/BayutLocalPackages"
-        )
+        .target(name: "MarqueeLabel", path: "MarqueeLabel/Sources"),
+        .target(name: "ImageSlideshow", path: "ImageSlideshow/ImageSlideshow"),
+        .target(name: "Presentr", path: "Presentr/Presentr"),
+        .target(name: "RangeSeekSlider", path: "RangeSeekSlider/Sources"),
+        .target(name: "ReadMoreTextView", path: "ReadMoreTextView/Sources"),
+        .target(name: "TTTAttributedLabel", path: "TTTAttributedLabel/TTTAttributedLabel"),
+        .target(name: "SlideMenuControllerSwift", path: "SlideMenuControllerSwift/Source"),
+        .target(name: "DZNWebViewController", path: "DZNWebViewController/Source")
     ]
 )
-

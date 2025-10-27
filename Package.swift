@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "BayutLocalPackages",
+    defaultLocalization: "en",
     platforms: [.iOS(.v13)],
     products: [
         .library(name: "MarqueeLabel", targets: ["MarqueeLabel"]),
@@ -29,6 +30,6 @@ let package = Package(
             ]
         ),
         .target(name: "SlideMenuController", path: "SlideMenuController/Source"),
-        .target(name: "DZNWebViewController", path: "DZNWebViewController/Source")
+        .target(name: "DZNWebViewController", path: "DZNWebViewController/Source", publicHeadersPath: ".")
     ]
 )

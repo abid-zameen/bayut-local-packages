@@ -7,6 +7,7 @@ let package = Package(
     platforms: [.iOS(.v12)],
     products: [
         .library(name: "MarqueeLabel", targets: ["MarqueeLabel"]),
+        .library(name: "AlamofireObjectMapper", targets: ["AlamofireObjectMapper"]),
         .library(name: "ImageSlideshow", targets: ["ImageSlideshow"]),
         .library(name: "ImageSlideshow/Alamofire", targets: ["ImageSlideshowAlamofire"]),
         .library(name: "ImageSlideshow/SDWebImage", targets: ["ImageSlideshowSDWebImage"]),
@@ -91,6 +92,7 @@ let package = Package(
             ]
         ),
         .target(name: "SlideMenuControllerSwift", path: "SlideMenuController/Source"),
-        .target(name: "DZNWebViewController", path: "DZNWebViewController/Source", publicHeadersPath: ".")
+        .target(name: "DZNWebViewController", path: "DZNWebViewController/Source", publicHeadersPath: "."),
+        .target(name: "AlamofireObjectMapper", path: "AlamofireObjectMapper")
     ]
 )

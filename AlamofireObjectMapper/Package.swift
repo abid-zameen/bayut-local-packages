@@ -14,7 +14,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", from: "4.7.0"),
-        .package(url: "https://github.com/tristanhimmelman/ObjectMapper.git", exact: "3.5.3")
+        .package(path: "../ObjectMapper")
     ],
     targets: [
         .target(

@@ -112,6 +112,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>ObjectMapper</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>Presentr</key>
 		<dict>
 			<key>primary</key>

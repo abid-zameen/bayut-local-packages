@@ -56,6 +56,10 @@ let package = Package(
       ]
     ),
     .target(
+      name: "ObjectMapper",
+      path: "Sources"
+    ),
+    .target(
       name: "ImageSlideshowAlamofire",
       dependencies: ["ImageSlideshow", "AlamofireImage"],
       path: "ImageSlideshow/ImageSlideshow/Classes/InputSources",
@@ -94,7 +98,10 @@ let package = Package(
     ),
     .target(name: "SlideMenuControllerSwift", path: "SlideMenuController/Source"),
     .target(name: "DZNWebViewController", path: "DZNWebViewController/Source", publicHeadersPath: "."),
-    .target(name: "AlamofireObjectMapper", path: "AlamofireObjectMapper"),
-    .target(name: "ObjectMapper", path: "ObjectMapper")
+    .target(
+      name: "AlamofireObjectMapper",
+      dependencies: ["ObjectMapper"],
+      path: "AlamofireObjectMapper"
+    )
   ]
 )

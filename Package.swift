@@ -11,7 +11,7 @@ let package = Package(
         .library(name: "RangeSeekSlider", targets: ["RangeSeekSlider"]),
         .library(name: "ReadMoreTextView", targets: ["ReadMoreTextView"]),
         .library(name: "TTTAttributedLabel", targets: ["TTTAttributedLabel"]),
-        .library(name: "SlideMenuControllerSwift", targets: ["SlideMenuControllerSwift"]),
+        .library(name: "SlideMenuControllerSwift", targets: ["SlideMenuController"]),
         .library(name: "DZNWebViewController", targets: ["DZNWebViewController"])
     ],
     targets: [
@@ -20,8 +20,15 @@ let package = Package(
         .target(name: "Presentr", path: "Presentr/Presentr"),
         .target(name: "RangeSeekSlider", path: "RangeSeekSlider/Sources"),
         .target(name: "ReadMoreTextView", path: "ReadMoreTextView/Sources"),
-        .target(name: "TTTAttributedLabel", path: "TTTAttributedLabel/TTTAttributedLabel"),
-        .target(name: "SlideMenuControllerSwift", path: "SlideMenuControllerSwift/Source"),
+        .target(
+            name: "TTTAttributedLabel",
+            path: "TTTAttributedLabel/TTTAttributedLabel",
+            publicHeadersPath: ".",
+            cSettings: [
+                .headerSearchPath(".")
+            ]
+        ),
+        .target(name: "SlideMenuController", path: "SlideMenuController/Source"),
         .target(name: "DZNWebViewController", path: "DZNWebViewController/Source")
     ]
 )

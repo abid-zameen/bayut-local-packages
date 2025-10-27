@@ -65,5 +65,63 @@
 			<integer>11</integer>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>DZNWebViewController</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ImageSlideshow</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ImageSlideshow/Alamofire</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ImageSlideshow/Kingfisher</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ImageSlideshow/SDWebImage</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>MarqueeLabel</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>Presentr</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>RangeSeekSlider</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ReadMoreTextView</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>SlideMenuControllerSwift</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>TTTAttributedLabel</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

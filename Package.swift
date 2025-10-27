@@ -15,7 +15,7 @@ let package = Package(
         .library(name: "RangeSeekSlider", targets: ["RangeSeekSlider"]),
         .library(name: "ReadMoreTextView", targets: ["ReadMoreTextView"]),
         .library(name: "TTTAttributedLabel", targets: ["TTTAttributedLabel"]),
-        .library(name: "SlideMenuControllerSwift", targets: ["SlideMenuController"]),
+        .library(name: "SlideMenuControllerSwift", targets: ["SlideMenuControllerSwift"]),
         .library(name: "DZNWebViewController", targets: ["DZNWebViewController"])
     ],
     dependencies: [
@@ -90,7 +90,7 @@ let package = Package(
                 .headerSearchPath(".")
             ]
         ),
-        .target(name: "SlideMenuController", path: "SlideMenuController/Source"),
+        .target(name: "SlideMenuControllerSwift", path: "SlideMenuController/Source"),
         .target(name: "DZNWebViewController", path: "DZNWebViewController/Source", publicHeadersPath: ".")
     ]
 )

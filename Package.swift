@@ -8,7 +8,6 @@ let package = Package(
   products: [
     .library(name: "MarqueeLabel", targets: ["MarqueeLabel"]),
     .library(name: "AlamofireObjectMapper", targets: ["AlamofireObjectMapper"]),
-    .library(name: "ObjectMapper", targets: ["ObjectMapper"]),
     .library(name: "ImageSlideshow", targets: ["ImageSlideshow"]),
     .library(name: "ImageSlideshow/Alamofire", targets: ["ImageSlideshowAlamofire"]),
     .library(name: "ImageSlideshow/SDWebImage", targets: ["ImageSlideshowSDWebImage"]),
@@ -56,10 +55,6 @@ let package = Package(
       ]
     ),
     .target(
-      name: "ObjectMapper",
-      path: "Sources"
-    ),
-    .target(
       name: "ImageSlideshowAlamofire",
       dependencies: ["ImageSlideshow", "AlamofireImage"],
       path: "ImageSlideshow/ImageSlideshow/Classes/InputSources",
@@ -100,7 +95,6 @@ let package = Package(
     .target(name: "DZNWebViewController", path: "DZNWebViewController/Source", publicHeadersPath: "."),
     .target(
       name: "AlamofireObjectMapper",
-      dependencies: ["ObjectMapper"],
       path: "AlamofireObjectMapper"
     )
   ]

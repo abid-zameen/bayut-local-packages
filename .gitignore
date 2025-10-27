@@ -1,1 +1,3 @@
 .DS_Store
+build/
+.swiftpm/xcode/xcuserdata/abidhussain.xcuserdatad/xcschemes/xcschememanagement.plist

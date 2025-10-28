@@ -7,6 +7,11 @@
 		<key>AlamofireObjectMapper.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
+		<key>AlamofireObjectMapper_Bayut.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
 		<key>BayutLocalPackages-Package.xcscheme_^#shared#^_</key>
@@ -22,19 +27,39 @@
 		<key>ImageSlideshow.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>18</integer>
 		</dict>
 		<key>ImageSlideshow/Alamofire.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>3</integer>
 		</dict>
 		<key>ImageSlideshow/Kingfisher.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>4</integer>
 		</dict>
 		<key>ImageSlideshow/SDWebImage.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+		<key>ImageSlideshowAlamofire_Bayut.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>ImageSlideshowKingfisher_Bayut.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>ImageSlideshowSDWebImage_Bayut.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>ImageSlideshow_Bayut.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>6</integer>
@@ -45,6 +70,11 @@
 			<integer>7</integer>
 		</dict>
 		<key>ObjectMapper.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
+		<key>ObjectMapper_Bayut.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>8</integer>
@@ -82,6 +112,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>AlamofireObjectMapper_Bayut</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DZNWebViewController</key>
 		<dict>
 			<key>primary</key>
@@ -107,12 +142,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>ImageSlideshow_Bayut</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>MarqueeLabel</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>ObjectMapper</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ObjectMapper_Bayut</key>
 		<dict>
 			<key>primary</key>
 			<true/>

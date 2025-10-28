@@ -7,6 +7,7 @@ let package = Package(
   platforms: [.iOS(.v12)],
   products: [
     .library(name: "MarqueeLabel", targets: ["MarqueeLabel"]),
+    .library(name: "ObjectMapper", targets: ["ObjectMapper"]),
     .library(name: "AlamofireObjectMapper", targets: ["AlamofireObjectMapper"]),
     .library(name: "ImageSlideshow", targets: ["ImageSlideshow"]),
     .library(name: "ImageSlideshow/Alamofire", targets: ["ImageSlideshowAlamofire"]),
@@ -96,6 +97,10 @@ let package = Package(
     .target(
       name: "AlamofireObjectMapper",
       path: "AlamofireObjectMapper"
+    ),
+    .target(
+      name: "ObjectMapper",
+      path: "ObjectMapper"
     )
   ]
 )

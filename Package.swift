@@ -8,7 +8,6 @@ let package = Package(
     products: [
         .library(name: "MarqueeLabel", targets: ["MarqueeLabel"]),
         .library(name: "ObjectMapper", targets: ["ObjectMapper"]),
-//        .library(name: "AlamofireObjectMapper", targets: ["AlamofireObjectMapper"]),
         .library(name: "ImageSlideshow", targets: ["ImageSlideshow"]),
         .library(name: "Presentr", targets: ["Presentr"]),
         .library(name: "RangeSeekSlider", targets: ["RangeSeekSlider"]),
@@ -19,7 +18,6 @@ let package = Package(
     ],
     dependencies: [
         // External dependencies used by multiple targets
-        .package(url: "https://github.com/Alamofire/Alamofire.git", from: "4.7.0"),
         .package(url: "https://github.com/onevcat/Kingfisher.git", from: "5.8.0"),
         .package(url: "https://github.com/Alamofire/AlamofireImage.git", from: "3.6.0"),
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.1.0")
@@ -104,14 +102,6 @@ let package = Package(
 
         // MARK: - Networking & Mapping
 
-//        .target(
-//            name: "AlamofireObjectMapper",
-//            dependencies: [
-//                "ObjectMapper",
-//                "Alamofire"
-//            ],
-//            path: "AlamofireObjectMapper"
-//        ),
         .target(
             name: "ObjectMapper",
             path: "ObjectMapper"

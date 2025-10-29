@@ -17,7 +17,11 @@ let package = Package(
         .library(name: "DZNWebViewController", targets: ["DZNWebViewController"]),
         .library(
             name: "FlagPhoneNumber",
-            targets: ["FlagPhoneNumber", "libPhoneNumber"])
+            targets: ["FlagPhoneNumber", "libPhoneNumber"]),
+        .library(
+            name: "InstantSearchClient",
+            targets: ["InstantSearchClient"]
+        )
     ],
     dependencies: [
         // External dependencies used by multiple targets
@@ -128,6 +132,10 @@ let package = Package(
         .target(
             name: "ObjectMapper",
             path: "ObjectMapper"
-        )
+        ),
+        .target(
+            name: "InstantSearchClient",
+            path: "InstantSearchClient"
+        ),
     ]
 )

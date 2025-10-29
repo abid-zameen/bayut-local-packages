@@ -14,7 +14,10 @@ let package = Package(
         .library(name: "ReadMoreTextView", targets: ["ReadMoreTextView"]),
         .library(name: "TTTAttributedLabel", targets: ["TTTAttributedLabel"]),
         .library(name: "SlideMenuControllerSwift", targets: ["SlideMenuControllerSwift"]),
-        .library(name: "DZNWebViewController", targets: ["DZNWebViewController"])
+        .library(name: "DZNWebViewController", targets: ["DZNWebViewController"]),
+        .library(
+            name: "FlagPhoneNumber",
+            targets: ["FlagPhoneNumber", "libPhoneNumber"])
     ],
     dependencies: [
         // External dependencies used by multiple targets
@@ -79,7 +82,27 @@ let package = Package(
 
         .target(name: "RangeSeekSlider", path: "RangeSeekSlider/Sources"),
         .target(name: "ReadMoreTextView", path: "ReadMoreTextView/Sources"),
-
+        .target(
+            name: "libPhoneNumber",
+            dependencies: [],
+            path: "FlagPhoneNumber/libPhoneNumber",
+            publicHeadersPath: ".",
+            cSettings: [
+                .headerSearchPath("Internal")
+            ]
+        ),
+        .target(
+            name: "FlagPhoneNumber",
+            dependencies: ["libPhoneNumber"],
+            path: "FlagPhoneNumber",
+            exclude: ["Info.plist", "libPhoneNumber"],
+            resources: [
+                .process("Resources/countryCodes.json"),
+                .process("Resources/FlagKit.xcassets")
+            ],
+            publicHeadersPath: "."
+        ),
+        
         // MARK: - ObjC-based Targets
 
         .target(

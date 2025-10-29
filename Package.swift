@@ -8,11 +8,8 @@ let package = Package(
     products: [
         .library(name: "MarqueeLabel", targets: ["MarqueeLabel"]),
         .library(name: "ObjectMapper", targets: ["ObjectMapper"]),
-        .library(name: "AlamofireObjectMapper", targets: ["AlamofireObjectMapper"]),
+//        .library(name: "AlamofireObjectMapper", targets: ["AlamofireObjectMapper"]),
         .library(name: "ImageSlideshow", targets: ["ImageSlideshow"]),
-        .library(name: "ImageSlideshowAlamofire", targets: ["ImageSlideshowAlamofire"]),
-        .library(name: "ImageSlideshowSDWebImage", targets: ["ImageSlideshowSDWebImage"]),
-        .library(name: "ImageSlideshowKingfisher", targets: ["ImageSlideshowKingfisher"]),
         .library(name: "Presentr", targets: ["Presentr"]),
         .library(name: "RangeSeekSlider", targets: ["RangeSeekSlider"]),
         .library(name: "ReadMoreTextView", targets: ["ReadMoreTextView"]),
@@ -107,14 +104,14 @@ let package = Package(
 
         // MARK: - Networking & Mapping
 
-        .target(
-            name: "AlamofireObjectMapper",
-            dependencies: [
-                "ObjectMapper",
-                "Alamofire"
-            ],
-            path: "AlamofireObjectMapper"
-        ),
+//        .target(
+//            name: "AlamofireObjectMapper",
+//            dependencies: [
+//                "ObjectMapper",
+//                "Alamofire"
+//            ],
+//            path: "AlamofireObjectMapper"
+//        ),
         .target(
             name: "ObjectMapper",
             path: "ObjectMapper"
